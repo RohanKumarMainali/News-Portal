@@ -13,7 +13,7 @@ from rest_framework import permissions
 @api_view(['GET'])
 @permission_classes((permissions.AllowAny,))
 
-def blog_list(request):
+def blogs(request):
     SingleBlog=Blog.objects.all()
     serializeObj=BlogSerializer(SingleBlog,many='true')
     return Response(serializeObj.data)
