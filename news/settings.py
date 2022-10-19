@@ -90,12 +90,17 @@ REST_FRAMEWORK = {
 DATABASES = {
 
     'default': {
+
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': 'mydatabase',
+
+
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'xyz_test',
+        'NAME': 'xyz_news',
         'HOST': 'localhost',
         'PORT': '3306',
-        'USER': 'xyz_test',
-        'PASSWORD': 'cvwkxam81028102',
+        'USER': 'xyz_news',
+        'PASSWORD': 'JbtGldruz90[',
     }
 }
 
